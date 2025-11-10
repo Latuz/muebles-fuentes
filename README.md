@@ -1,36 +1,160 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# 🪑 Muebles Artesanales - Sitio Web
 
-## Getting Started
+Sitio web profesional para negocio de muebles a medida y tapicería en Chile. Construido con Next.js, TypeScript y Tailwind CSS.
 
-First, run the development server:
+## 🚀 Características
+
+- ✅ Diseño mobile-first y totalmente responsivo
+- ✅ Optimizado para SEO (búsquedas locales en Chile)
+- ✅ Galería de imágenes con lazy loading
+- ✅ Botón flotante de WhatsApp
+- ✅ Paleta de colores cálida y natural
+- ✅ Performance optimizada (Core Web Vitals)
+- ✅ Metadata OpenGraph para redes sociales
+
+## 📋 Páginas
+
+- **Home**: Hero section, servicios y CTA
+- **Galería**: Grid de imágenes con filtros y lightbox
+- **Contacto**: Información de contacto y FAQs
+
+## 🛠️ Stack Tecnológico
+
+- **Framework**: Next.js 16 (App Router)
+- **Lenguaje**: TypeScript
+- **Estilos**: Tailwind CSS v4
+- **Hosting**: Vercel (Free Tier)
+- **DNS**: Cloudflare (Free Tier)
+
+## 🏃 Desarrollo Local
 
 ```bash
+# Instalar dependencias
+npm install
+
+# Iniciar servidor de desarrollo
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+
+# Abrir http://localhost:3000
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## 📝 Personalización
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+### 1. Información de Contacto
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+Actualiza los siguientes archivos con tu información:
 
-## Learn More
+- `components/Navbar.tsx` - Número de WhatsApp
+- `components/Footer.tsx` - Teléfono, email, ubicación
+- `components/WhatsAppButton.tsx` - Número de WhatsApp
+- `app/contacto/page.tsx` - Todos los datos de contacto
 
-To learn more about Next.js, take a look at the following resources:
+### 2. Imágenes
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+Reemplaza los placeholders en `/public/images/` con tus fotos:
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+- Formato recomendado: JPG o WebP
+- Tamaño recomendado: 1200x800px
+- Optimiza las imágenes antes de subirlas
 
-## Deploy on Vercel
+### 3. Metadata SEO
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+Actualiza en `app/layout.tsx`:
+- Nombre del negocio
+- Descripción
+- Keywords
+- Ciudad/ubicación
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+### 4. Colores
+
+Modifica la paleta en `app/globals.css`:
+```css
+:root {
+  --primary: #8B6F47;
+  --secondary: #D4A574;
+  /* ... más colores */
+}
+```
+
+## 🚀 Deployment en Vercel
+
+### Opción 1: Desde GitHub
+
+1. Sube tu código a GitHub
+2. Ve a [vercel.com](https://vercel.com)
+3. Importa tu repositorio
+4. Deploy automático ✨
+
+### Opción 2: Vercel CLI
+
+```bash
+npm install -g vercel
+vercel login
+vercel
+```
+
+## 🌐 Configuración DNS (Cloudflare + NIC.cl)
+
+### 1. Cloudflare
+
+1. Crea cuenta en [cloudflare.com](https://cloudflare.com)
+2. Agrega tu dominio
+3. Copia los nameservers (ej: `ns1.cloudflare.com`)
+
+### 2. NIC.cl
+
+1. Ingresa a tu cuenta en [nic.cl](https://nic.cl)
+2. Ve a "Administrar dominio"
+3. Actualiza los nameservers con los de Cloudflare
+4. Espera 24-48 horas para propagación
+
+### 3. Conectar Vercel
+
+En Cloudflare DNS:
+```
+Type: CNAME
+Name: @
+Target: cname.vercel-dns.com
+Proxy: Activado (nube naranja)
+```
+
+## 📊 Analytics
+
+Vercel Analytics está incluido en el free tier. Para activarlo:
+
+1. Ve a tu proyecto en Vercel
+2. Settings → Analytics
+3. Enable Analytics
+
+## ✅ Checklist Post-Deploy
+
+- [ ] Actualizar información de contacto
+- [ ] Subir imágenes reales
+- [ ] Configurar dominio personalizado
+- [ ] Verificar SEO con Google Search Console
+- [ ] Probar en dispositivos móviles
+- [ ] Verificar Core Web Vitals
+- [ ] Configurar Google Analytics (opcional)
+
+## 📱 Números de WhatsApp
+
+Formato correcto para Chile:
+```
+Número: +569 1234 5678
+URL: https://wa.me/56912345678
+```
+
+## 🎨 Recursos Adicionales
+
+- [Next.js Docs](https://nextjs.org/docs)
+- [Tailwind CSS](https://tailwindcss.com)
+- [Vercel Docs](https://vercel.com/docs)
+- [Cloudflare Docs](https://developers.cloudflare.com)
+
+## 📄 Licencia
+
+Este proyecto es privado y de uso exclusivo para el negocio.
+
+---
+
+**Desarrollado con ❤️ para Muebles Artesanales**
