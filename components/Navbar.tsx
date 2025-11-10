@@ -21,13 +21,13 @@ export default function Navbar() {
           <Link href="/" className="flex items-center space-x-3">
             <Image
               src="/logo.jpg"
-              alt="Muebles Artesanales Logo"
+              alt="Muebles Fuentes Logo"
               width={50}
               height={50}
               className="rounded-lg"
             />
             <div className="text-xl md:text-2xl font-bold text-primary hidden sm:block">
-              Muebles Artesanales
+              Muebles Fuentes
             </div>
           </Link>
 
@@ -43,7 +43,7 @@ export default function Navbar() {
               </Link>
             ))}
             <a
-              href="https://wa.me/56912345678?text=Hola,%20me%20interesa%20consultar%20sobre%20sus%20muebles"
+              href="https://wa.me/56976597755?text=Hola,%20me%20interesa%20consultar%20sobre%20sus%20muebles"
               target="_blank"
               rel="noopener noreferrer"
               className="bg-primary hover:bg-primary-dark text-white px-6 py-2 rounded-full transition-colors font-medium"
@@ -90,7 +90,7 @@ export default function Navbar() {
               </Link>
             ))}
             <a
-              href="https://wa.me/56912345678?text=Hola,%20me%20interesa%20consultar%20sobre%20sus%20muebles"
+              href="https://wa.me/56976597755?text=Hola,%20me%20interesa%20consultar%20sobre%20sus%20muebles"
               target="_blank"
               rel="noopener noreferrer"
               className="block text-center bg-primary hover:bg-primary-dark text-white px-4 py-2 rounded-lg transition-colors font-medium mx-4"

@@ -1,11 +1,13 @@
 import type { Metadata } from 'next';
 
 export const metadata: Metadata = {
-  title: 'Contacto - Muebles Artesanales',
-  description: 'Contáctanos para consultas sobre muebles a medida, tapicería y restauración. Estamos en Santiago, Chile.',
+  title: 'Contacto - Muebles Fuentes',
+  description:
+    'Contáctanos para consultas sobre muebles a medida, tapicería y restauración. Atención telefónica personalizada.',
   openGraph: {
-    title: 'Contacto - Muebles Artesanales',
-    description: 'Contáctanos para consultas sobre muebles a medida, tapicería y restauración',
+    title: 'Contacto - Muebles Fuentes',
+    description:
+      'Contáctanos para consultas sobre muebles a medida, tapicería y restauración',
     locale: 'es_CL',
   },
 };
@@ -14,13 +16,23 @@ export default function ContactoPage() {
   const contactMethods = [
     {
       icon: (
-        <svg className="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z" />
+        <svg
+          className="w-8 h-8"
+          fill="none"
+          stroke="currentColor"
+          viewBox="0 0 24 24"
+        >
+          <path
+            strokeLinecap="round"
+            strokeLinejoin="round"
+            strokeWidth={2}
+            d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"
+          />
         </svg>
       ),
       title: 'Teléfono',
-      value: '+569 1234 5678',
-      link: 'tel:+56912345678',
+      value: '+569 76597755',
+      link: 'tel:+56976597755',
       description: 'Llámanos de Lun-Vie 9:00-18:00',
     },
     {
@@ -30,51 +42,53 @@ export default function ContactoPage() {
         </svg>
       ),
       title: 'WhatsApp',
-      value: '+569 1234 5678',
-      link: 'https://wa.me/56912345678?text=Hola,%20me%20interesa%20consultar%20sobre%20sus%20servicios',
+      value: '+569 76597755',
+      link: 'https://wa.me/56976597755?text=Hola,%20me%20interesa%20consultar%20sobre%20sus%20servicios',
       description: 'Respuesta rápida y directa',
     },
     {
       icon: (
-        <svg className="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
+        <svg
+          className="w-8 h-8"
+          fill="none"
+          stroke="currentColor"
+          viewBox="0 0 24 24"
+        >
+          <path
+            strokeLinecap="round"
+            strokeLinejoin="round"
+            strokeWidth={2}
+            d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"
+          />
         </svg>
       ),
       title: 'Email',
-      value: 'contacto@muebles.cl',
-      link: 'mailto:contacto@muebles.cl',
+      value: 'contacto@mueblesfuentes.cl',
+      link: 'mailto:contacto@mueblesfuentes.cl',
       description: 'Envíanos tu consulta',
-    },
-    {
-      icon: (
-        <svg className="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z" />
-          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M15 11a3 3 0 11-6 0 3 3 0 016 0z" />
-        </svg>
-      ),
-      title: 'Ubicación',
-      value: 'Santiago, Chile',
-      link: '#',
-      description: 'Visítanos con cita previa',
     },
   ];
 
   const faqs = [
     {
       question: '¿Hacen muebles a medida?',
-      answer: 'Sí, nos especializamos en crear muebles personalizados según tus necesidades y el espacio disponible.',
+      answer:
+        'Sí, nos especializamos en crear muebles personalizados según tus necesidades y el espacio disponible.',
     },
     {
       question: '¿Cuánto tiempo toma fabricar un mueble?',
-      answer: 'El tiempo varía según la complejidad del proyecto, pero generalmente entre 2-4 semanas desde la aprobación del diseño.',
+      answer:
+        'El tiempo varía según la complejidad del proyecto, pero generalmente entre 2-4 semanas desde la aprobación del diseño.',
     },
     {
       question: '¿Ofrecen servicio de tapicería?',
-      answer: 'Sí, ofrecemos servicios completos de tapicería y restauración de muebles.',
+      answer:
+        'Sí, ofrecemos servicios completos de tapicería y restauración de muebles.',
     },
     {
       question: '¿Trabajan con qué tipos de madera?',
-      answer: 'Trabajamos con diversos tipos de madera según tu preferencia y presupuesto: pino, roble, raulí, lenga, entre otros.',
+      answer:
+        'Trabajamos con diversos tipos de madera según tu preferencia y presupuesto: pino, roble, raulí, lenga, entre otros.',
     },
   ];
 
@@ -95,13 +109,17 @@ export default function ContactoPage() {
       {/* Contact Methods */}
       <section className="py-16">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
+          <div className="grid md:grid-cols-3 gap-6">
             {contactMethods.map((method, index) => (
               <a
                 key={index}
                 href={method.link}
                 target={method.link.startsWith('http') ? '_blank' : undefined}
-                rel={method.link.startsWith('http') ? 'noopener noreferrer' : undefined}
+                rel={
+                  method.link.startsWith('http')
+                    ? 'noopener noreferrer'
+                    : undefined
+                }
                 className="bg-white rounded-xl p-6 shadow-md hover:shadow-xl transition-all duration-300 hover:-translate-y-1 border border-neutral group"
               >
                 <div className="text-primary mb-4 group-hover:scale-110 transition-transform duration-300">
@@ -113,49 +131,93 @@ export default function ContactoPage() {
                 <p className="text-primary font-semibold mb-1">
                   {method.value}
                 </p>
-                <p className="text-sm text-gray-600">
-                  {method.description}
-                </p>
+                <p className="text-sm text-gray-600">{method.description}</p>
               </a>
             ))}
           </div>
         </div>
       </section>
 
-      {/* Map Section */}
+      {/* Horarios de Atención */}
       <section className="py-16 bg-neutral-light">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="grid md:grid-cols-2 gap-12 items-center">
-            <div>
-              <h2 className="text-3xl md:text-4xl font-bold text-foreground mb-6">
-                Visítanos
-              </h2>
-              <div className="space-y-4 text-gray-600">
-                <p className="flex items-start space-x-3">
-                  <svg className="w-6 h-6 text-primary flex-shrink-0 mt-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z" />
-                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M15 11a3 3 0 11-6 0 3 3 0 016 0z" />
-                  </svg>
-                  <span>Santiago, Chile<br />Dirección específica aquí</span>
-                </p>
-                <p className="flex items-start space-x-3">
-                  <svg className="w-6 h-6 text-primary flex-shrink-0 mt-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z" />
-                  </svg>
-                  <span>Lunes a Viernes: 9:00 - 18:00<br />Sábados: 10:00 - 14:00</span>
-                </p>
-                <p className="text-sm text-primary font-semibold mt-6">
-                  * Se recomienda agendar cita previa
-                </p>
+        <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="text-center mb-12">
+            <h2 className="text-3xl md:text-4xl font-bold text-foreground mb-4">
+              Horarios de Atención
+            </h2>
+            <p className="text-lg text-gray-600">
+              Estamos disponibles para atenderte telefónicamente
+            </p>
+          </div>
+          <div className="bg-white rounded-xl p-8 shadow-lg">
+            <div className="grid md:grid-cols-2 gap-8">
+              <div className="space-y-4">
+                <div className="flex items-center space-x-4">
+                  <div className="bg-primary/10 p-3 rounded-lg">
+                    <svg
+                      className="w-6 h-6 text-primary"
+                      fill="none"
+                      stroke="currentColor"
+                      viewBox="0 0 24 24"
+                    >
+                      <path
+                        strokeLinecap="round"
+                        strokeLinejoin="round"
+                        strokeWidth={2}
+                        d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"
+                      />
+                    </svg>
+                  </div>
+                  <div>
+                    <p className="font-semibold text-foreground">Lunes a Viernes</p>
+                    <p className="text-gray-600">9:00 - 18:00</p>
+                  </div>
+                </div>
+                <div className="flex items-center space-x-4">
+                  <div className="bg-primary/10 p-3 rounded-lg">
+                    <svg
+                      className="w-6 h-6 text-primary"
+                      fill="none"
+                      stroke="currentColor"
+                      viewBox="0 0 24 24"
+                    >
+                      <path
+                        strokeLinecap="round"
+                        strokeLinejoin="round"
+                        strokeWidth={2}
+                        d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"
+                      />
+                    </svg>
+                  </div>
+                  <div>
+                    <p className="font-semibold text-foreground">Sábados</p>
+                    <p className="text-gray-600">10:00 - 14:00</p>
+                  </div>
+                </div>
               </div>
-            </div>
-            <div className="h-[400px] bg-gradient-to-br from-primary/10 to-accent/10 rounded-xl flex items-center justify-center">
-              <div className="text-center text-primary">
-                <svg className="w-24 h-24 mx-auto mb-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M9 20l-5.447-2.724A1 1 0 013 16.382V5.618a1 1 0 011.447-.894L9 7m0 13l6-3m-6 3V7m6 10l4.553 2.276A1 1 0 0021 18.382V7.618a1 1 0 00-.553-.894L15 4m0 13V4m0 0L9 7" />
-                </svg>
-                <p className="text-lg font-semibold">Mapa de Google</p>
-                <p className="text-sm mt-2">Agrega tu ubicación aquí</p>
+              <div className="bg-gradient-to-br from-primary/5 to-accent/5 rounded-lg p-6 flex flex-col justify-center">
+                <p className="text-gray-700 mb-4">
+                  Contáctanos por teléfono o WhatsApp durante nuestros horarios de atención para consultas, cotizaciones y asesoría personalizada.
+                </p>
+                <a
+                  href="tel:+56976597755"
+                  className="inline-flex items-center justify-center bg-primary hover:bg-primary-dark text-white px-6 py-3 rounded-lg font-semibold transition-all duration-300"
+                >
+                  <svg
+                    className="w-5 h-5 mr-2"
+                    fill="none"
+                    stroke="currentColor"
+                    viewBox="0 0 24 24"
+                  >
+                    <path
+                      strokeLinecap="round"
+                      strokeLinejoin="round"
+                      strokeWidth={2}
+                      d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"
+                    />
+                  </svg>
+                  Llamar Ahora
+                </a>
               </div>
             </div>
           </div>
@@ -177,9 +239,7 @@ export default function ContactoPage() {
                 <h3 className="text-xl font-bold text-foreground mb-3">
                   {faq.question}
                 </h3>
-                <p className="text-gray-600 leading-relaxed">
-                  {faq.answer}
-                </p>
+                <p className="text-gray-600 leading-relaxed">{faq.answer}</p>
               </div>
             ))}
           </div>
@@ -196,7 +256,7 @@ export default function ContactoPage() {
             Contáctanos ahora y recibe una cotización sin compromiso
           </p>
           <a
-            href="https://wa.me/56912345678?text=Hola,%20me%20gustaría%20solicitar%20una%20cotización"
+            href="https://wa.me/56976597755?text=Hola,%20me%20gustaría%20solicitar%20una%20cotización"
             target="_blank"
             rel="noopener noreferrer"
             className="inline-block bg-white text-primary hover:bg-neutral-light px-8 py-4 rounded-full font-semibold transition-all duration-300 hover:scale-105 shadow-lg"

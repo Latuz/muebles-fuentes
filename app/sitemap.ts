@@ -1,7 +1,7 @@
 import { MetadataRoute } from 'next';
 
 export default function sitemap(): MetadataRoute.Sitemap {
-  const baseUrl = 'https://tudominio.cl'; // Actualizar con tu dominio
+  const baseUrl = 'https://mueblesricardofuentes.cl';
 
   return [
     {

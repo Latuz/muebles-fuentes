@@ -1,9 +1,12 @@
 'use client';
 
 export default function WhatsAppButton() {
-  const phoneNumber = '56912345678';
-  const message = 'Hola, me interesa consultar sobre sus muebles y servicios de tapicería';
-  const whatsappUrl = `https://wa.me/${phoneNumber}?text=${encodeURIComponent(message)}`;
+  const phoneNumber = '56976597755';
+  const message =
+    'Hola, me interesa consultar sobre sus muebles y servicios de tapicería';
+  const whatsappUrl = `https://wa.me/${phoneNumber}?text=${encodeURIComponent(
+    message
+  )}`;
 
   return (
     <a

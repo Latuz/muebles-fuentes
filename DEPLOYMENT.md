@@ -29,9 +29,9 @@ contacto@muebles.cl → TU_EMAIL_REAL
 Muebles Artesanales → TU_NOMBRE_REAL
 ```
 
-**Ubicación:**
+**Área de servicio:**
 ```bash
-Santiago, Chile → TU_CIUDAD_REAL
+Chile → TU_ÁREA_DE_SERVICIO
 ```
 
 ### 1.2 Agregar Imágenes
@@ -217,11 +217,13 @@ Verifica en [PageSpeed Insights](https://pagespeed.web.dev/):
 3. Verifica propiedad (método DNS en Cloudflare)
 4. Envía sitemap: `https://tudominio.cl/sitemap.xml`
 
-### 6.2 Google Business Profile
+### 6.2 Google Business Profile (Opcional)
+
+**Nota:** Solo si tienes una ubicación física para clientes.
 
 1. Crea perfil en [business.google.com](https://business.google.com)
 2. Agrega información del negocio
-3. Verifica ubicación
+3. Verifica ubicación física
 4. Agrega fotos
 5. Vincula con tu sitio web
 

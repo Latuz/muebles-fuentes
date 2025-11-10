@@ -45,7 +45,7 @@ npm run dev
 Actualiza los siguientes archivos con tu información:
 
 - `components/Navbar.tsx` - Número de WhatsApp
-- `components/Footer.tsx` - Teléfono, email, ubicación
+- `components/Footer.tsx` - Teléfono, email, WhatsApp
 - `components/WhatsAppButton.tsx` - Número de WhatsApp
 - `app/contacto/page.tsx` - Todos los datos de contacto
 
@@ -60,18 +60,20 @@ Reemplaza los placeholders en `/public/images/` con tus fotos:
 ### 3. Metadata SEO
 
 Actualiza en `app/layout.tsx`:
+
 - Nombre del negocio
 - Descripción
 - Keywords
-- Ciudad/ubicación
+- Área de servicio
 
 ### 4. Colores
 
 Modifica la paleta en `app/globals.css`:
+
 ```css
 :root {
-  --primary: #8B6F47;
-  --secondary: #D4A574;
+  --primary: #8b6f47;
+  --secondary: #d4a574;
   /* ... más colores */
 }
 ```
@@ -111,6 +113,7 @@ vercel
 ### 3. Conectar Vercel
 
 En Cloudflare DNS:
+
 ```
 Type: CNAME
 Name: @
@@ -139,9 +142,10 @@ Vercel Analytics está incluido en el free tier. Para activarlo:
 ## 📱 Números de WhatsApp
 
 Formato correcto para Chile:
+
 ```
-Número: +569 1234 5678
-URL: https://wa.me/56912345678
+Número: +569 76597755
+URL: https://wa.me/56976597755
 ```
 
 ## 🎨 Recursos Adicionales

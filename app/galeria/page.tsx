@@ -3,10 +3,12 @@ import ImageGallery from '@/components/ImageGallery';
 
 export const metadata: Metadata = {
   title: 'Galería - Muebles Artesanales',
-  description: 'Explora nuestra colección de muebles a medida y trabajos de tapicería. Diseños únicos y calidad artesanal.',
+  description:
+    'Explora nuestra colección de muebles a medida y trabajos de tapicería. Diseños únicos y calidad artesanal.',
   openGraph: {
     title: 'Galería - Muebles Artesanales',
-    description: 'Explora nuestra colección de muebles a medida y trabajos de tapicería',
+    description:
+      'Explora nuestra colección de muebles a medida y trabajos de tapicería',
     locale: 'es_CL',
   },
 };
@@ -21,7 +23,8 @@ export default function GaleriaPage() {
             Nuestra Galería
           </h1>
           <p className="text-lg md:text-xl text-gray-600 max-w-2xl mx-auto">
-            Descubre nuestros trabajos más recientes. Cada pieza cuenta una historia única de artesanía y dedicación.
+            Descubre nuestros trabajos más recientes. Cada pieza cuenta una
+            historia única de artesanía y dedicación.
           </p>
         </div>
       </section>
@@ -43,7 +46,7 @@ export default function GaleriaPage() {
             Contáctanos para crear tu propio mueble personalizado
           </p>
           <a
-            href="https://wa.me/56912345678?text=Hola,%20vi%20su%20galería%20y%20me%20interesa%20un%20mueble%20personalizado"
+            href="https://wa.me/56976597755?text=Hola,%20vi%20su%20galería%20y%20me%20interesa%20un%20mueble%20personalizado"
             target="_blank"
             rel="noopener noreferrer"
             className="inline-block bg-primary hover:bg-primary-dark text-white px-8 py-4 rounded-full font-semibold transition-all duration-300 hover:scale-105 shadow-lg"
